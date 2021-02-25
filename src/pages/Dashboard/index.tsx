@@ -28,7 +28,7 @@ export default function Dashboard(){
             Olá, Leonardo Alves
           </Typography>
           <p style={{ display: 'flex'}}> 
-            <BeenhereTwoToneIcon fontSize="small"/> leorobertoralves@gmail.com
+            <BeenhereTwoToneIcon style={{fontSize: '1.2rem', marginRight: '0.5rem'}}/> leorobertoralves@gmail.com
           </p>
           <Button size="medium">Sair</Button>
         </div>
