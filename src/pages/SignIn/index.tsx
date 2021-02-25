@@ -1,12 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import Avatar from '@material-ui/core/Avatar';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
-import Paper from '@material-ui/core/Paper';
+import {
+  Avatar,
+  CssBaseline,
+  Box,
+  Grid,
+  Typography,
+  Container,
+  Paper
+} from '@material-ui/core';
+
 import { ButtonSignInGoogle } from '../../components/ButtonSignInGoogle';
 import { Copyright } from '../../components/Copyright';
 
@@ -34,9 +38,11 @@ export default function SignIn() {
           alignItems="center"
           className={styles.grid}
         >
-          <ButtonSignInGoogle>
-            Entrar com o Google
-          </ButtonSignInGoogle>
+          <Link to="dashboard" style={{ textDecoration: 'none' }}>
+            <ButtonSignInGoogle>
+              Entrar com o Google
+            </ButtonSignInGoogle>
+          </Link>
         </Grid>
         <Box mt={8}>
           <Copyright />
